@@ -13,12 +13,12 @@ class ReviewList extends StatelessWidget{
       margin: const EdgeInsets.only(bottom: 30.0),
       child: Column(
         children: [
-          Review(pathImage, name, details, comment),
-          Review(pathImage, name, details, comment),
-          Review(pathImage, name, details, comment),
-          Review(pathImage, name, details, comment),
-          Review(pathImage, name, details, comment),
-          Review(pathImage, name, details, comment),
+          Review(pathImage, name, details, comment, 5.0),
+          Review(pathImage, name, details, comment, 5.0),
+          Review(pathImage, name, details, comment, 4.5),
+          Review(pathImage, name, details, comment, 4.0),
+          Review(pathImage, name, details, comment, 2.5),
+          Review(pathImage, name, details, comment, 1.5),
         ],
       ),
     );

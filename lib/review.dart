@@ -6,8 +6,9 @@ class Review extends StatelessWidget {
   String name = "Varuna Yasas";
   String details = "1 review . 5 photos";
   String comment = "There is an amazing place in Sri Lanka";
+  double starts;
 
-  Review(this.pathImage, this.name, this.details, this.comment, {super.key});
+  Review(this.pathImage, this.name, this.details, this.comment, this.starts, {super.key});
 
   static const avatarSize = 64.0;
 
@@ -36,7 +37,7 @@ class Review extends StatelessWidget {
         RatingBar.builder(
           maxRating: 5,
           itemSize: 13.0,
-          initialRating: 4,
+          initialRating: starts,
           minRating: 1,
           direction: Axis.horizontal,
           allowHalfRating: true,
