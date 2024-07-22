@@ -37,7 +37,7 @@ class DescriptionPlace extends StatelessWidget {
           margin: const EdgeInsets.only(top: marginTop, left: 20.0, right: 20.0),
           child: Text(
             placeName,
-            style: const TextStyle(fontSize: 30.0, fontWeight: FontWeight.w800),
+            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w600),
             textAlign: TextAlign.start,
           ),
         ),
