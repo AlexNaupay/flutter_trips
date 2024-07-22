@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_started/description_place.dart';
+import 'package:flutter_started/review_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +44,23 @@ class MyApp extends StatelessWidget {
             centerTitle: true,
             title: const Text("Devlabs Trips"),
           ) ,
-          body: DescriptionPlace("Duwilli Ella", 3, dummyDescription)
+          body: SingleChildScrollView(
+            child: Column(
+              children: [
+                DescriptionPlace("Duwilli Ella", 3, dummyDescription),
+                Container(
+                  margin: const EdgeInsets.only(top: 16.0, left: 20.0),
+                  alignment: Alignment.centerLeft,
+                  child: const Text(
+                    "All Reviews",
+                    textAlign: TextAlign.left,
+                    style: TextStyle(fontSize: 15.0, color: Color(0xff767677)),
+                  ),
+                ),
+                ReviewList()
+              ],
+            ),
+          )
         )
     );
   }

@@ -90,6 +90,10 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
 
+  assets:
+    - assets/images/alexh.jpg
+    - assets/images/people.jpg
+
   fonts:
     - family: Poppins
       fonts:
